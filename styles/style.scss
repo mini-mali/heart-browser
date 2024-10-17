@@ -1,0 +1,222 @@
+@import "./styles/_variables";
+@import "./styles/_typography";
+@import "./styles/_layout";
+@import "./styles/components/_utility-classes";
+@import "./styles/components/_buttons";
+@import "./styles/components/_features";
+@import "./styles/components/_testimonial";
+
+
+
+
+//
+//	Section: Hero
+//
+.section--hero {
+	position: relative;
+	z-index: 1;
+	padding-top: $bu;
+
+	// 992px +
+	@media (min-width: $breakpoint-lg) {
+		padding-top: $bu*1.5;
+		//padding-bottom: $bu*4;
+	}
+
+	.container {
+		// 768px +
+		@media (min-width: $breakpoint-md) {
+			max-width: 704px;
+			padding: 0;
+		}
+
+		// 992px +
+		@media (min-width: $breakpoint-lg) {
+			max-width: 928px;
+		}
+
+		// 1280px +
+		@media (min-width: $breakpoint-xl) { max-width: 1192px; }
+
+		// 1366px +
+		@media (min-width: $breakpoint-xl2) { max-width: 1288px; }
+
+		// 1600px +
+		@media (min-width: $breakpoint-xxl) { max-width: 1360px; }
+	}
+
+	h1 {
+		margin-bottom: calc(#{$bu} / 2);
+	}
+
+	.btn-group {
+		margin: $bu*2 0;
+
+		// 992px +
+		@media (min-width: $breakpoint-lg) {
+			margin: $bu*2.5 0;
+		}
+	}
+
+	.trustpilot-widget {
+		position: relative;
+
+		iframe {
+			width: 200px;
+			height: 40px;
+			margin-left: auto;
+			margin-right: auto;
+
+			// 992px +
+			@media (min-width: $breakpoint-lg) {
+				width: 100%;
+				height: 20px;
+			}
+		}
+	}
+}
+
+.hero-visual {
+	width: 100%;
+	max-width: 1518px;
+	height: 376px;
+	overflow: hidden;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: $bu*1.5;
+
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+
+		display: block;
+		width: 440px;
+		height: 100%;
+		background: url('../img/bg-hero--mobile@2x.jpg') 50% 0 no-repeat;
+		background-size: contain;
+	}
+
+
+	// 576px +
+	@media (min-width: $breakpoint-sm) {
+		height: 493px;
+
+		&::after {
+			width: 576px;
+			background-size: cover;
+		}
+	}
+
+	// 768px +
+	@media (min-width: $breakpoint-md) {
+		height: 323px;
+		margin-top: -$bu*1.25;
+
+		&::after {
+			background-image: url('/img/bg-hero--desktop@2x.jpg');
+			width: 1080px;
+		}
+	}
+
+	// 992px +
+	@media (min-width: $breakpoint-lg) {
+		height: 397px;
+		margin-top: 0;
+
+		&::after {
+			width: 1326px;
+		}
+	}
+
+	// 1366px +
+	@media (min-width: $breakpoint-xl2) {
+		height: 429px;
+
+		&::after {
+			width: 1436px;
+		}
+	}
+
+	// 1600px +
+	@media (min-width: $breakpoint-xxl) {
+		max-width: 1518px;
+		height: 454px;
+		margin-top: -$bu*0.75;
+
+		&::after {
+			width: 1518px;
+		}
+	}
+}
+
+
+//
+//	Section: Features 1 (100% of our profits are donated to charities.)
+//
+.section--features-1 {
+	.features-container {
+		// 992px +
+		@media (min-width: $breakpoint-lg) {
+			margin: 0 $bu*5;
+		}
+
+		// 1280px +
+		@media (min-width: $breakpoint-xl) {
+			margin: 0;
+		}
+	}
+}
+
+
+//
+//	Section: Features 2 (We Never Ask You for Money)
+//
+//.section--features-2 {}
+
+
+//
+//	Section: Testimonials
+//
+//.section--testimonials {}
+
+
+//
+//	Section: Download – Before the Footer
+//
+//.section--download-bottom {}
+
+
+
+
+
+
+
+//
+//	DEV only
+//
+/*
+body {
+	position: relative;
+
+	&::after {
+		position: absolute;
+		z-index: 10002;
+		top: 0;
+		left: 0;
+		content: "";
+		width: 1792px;
+		height: 3686px;
+		pointer-events: none;
+		opacity: .5;
+		filter: hue-rotate(148deg);
+
+		background: url('/img/__1600.png') 50% 0 no-repeat;
+		background-size: 1600px 3686px;
+	}
+}
+*/
