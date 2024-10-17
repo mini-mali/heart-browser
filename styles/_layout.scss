@@ -1,6 +1,6 @@
-//
-//	Layout
-//
+@use "./styles/_variables" as *;  // Imports without namespace
+
+
 * {
 	margin: 0;
 	padding: 0;

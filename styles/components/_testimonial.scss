@@ -1,3 +1,5 @@
+@use "./styles/_variables" as *;  // Imports without namespace
+
 .testimonial-cards-wrap {
 	position: relative;
 

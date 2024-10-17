@@ -1,10 +1,10 @@
-@import "./styles/_variables";
-@import "./styles/_typography";
-@import "./styles/_layout";
-@import "./styles/components/_utility-classes";
-@import "./styles/components/_buttons";
-@import "./styles/components/_features";
-@import "./styles/components/_testimonial";
+@use "./styles/_variables" as *;  // Imports without namespace
+@use "./styles/_typography" as *;
+@use "./styles/_layout" as *;
+@use "./styles/components/_utility-classes" as *;
+@use "./styles/components/_buttons" as *;
+@use "./styles/components/_features" as *;
+@use "./styles/components/_testimonial" as *;
 
 
 
