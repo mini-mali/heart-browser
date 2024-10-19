@@ -1,10 +1,11 @@
-//
-//	Sticky bar
-//
 (function() {
-	// Get the sticky bar and the trigger element
+
+
+	//
+	//	Sticky bar
+	//
 	const stickyBar = document.querySelector('.sticky-bar');
-	const triggerElement = document.querySelector('.js-show-sticky-bar');
+	const triggerElement = document.querySelector('.js-show-sticky-bar'); // show Sticky bar once element with this class is reached
 
 	// Function to check when the sticky bar should appear
 	function checkStickyBar() {
