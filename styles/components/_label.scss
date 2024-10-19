@@ -1,0 +1,21 @@
+@use "./styles/_variables" as *;  // Imports without namespace
+
+.label {
+	display: inline-block;
+	padding: $bu*0.5 $bu*0.75;
+
+	font-size: $bu*0.875;
+	line-height: $bu;
+	font-weight: 700;
+
+	background: $turquoise;
+	border-radius: $bu*0.5;
+
+	// 992px +
+	@media (min-width: $breakpoint-lg) {
+		padding: $bu*0.625 $bu;
+		font-size: $bu;
+		line-height: $bu*1.125;
+		border-radius: $bu*0.5;
+	}
+}
