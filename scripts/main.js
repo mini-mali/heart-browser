@@ -26,4 +26,15 @@
 	if (stickyBar && triggerElement) {
 		window.addEventListener('scroll', checkStickyBar);
 	}
+
+
+	//
+	//	Download page – Trigger file download on page load
+	//
+	const downloadTriggerLink = document.getElementById('js-download-trigger');
+
+	// Listen for the scroll event
+	if (downloadTriggerLink) {
+		downloadTriggerLink.click();
+	}
 })();
