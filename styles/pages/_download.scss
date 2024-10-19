@@ -2,5 +2,15 @@
 
 
 #page-download {
-	background-color: $gray-3;
+	background-color: $gray-1;
+
+
+	.section--steps {
+		padding: $bu*4 0 $bu*4;
+
+		// 992px +
+		@media (min-width: $breakpoint-lg) {
+			padding: $bu*5 0 $bu*7.5;
+		}
+	}
 }
