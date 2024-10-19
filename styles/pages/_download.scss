@@ -2,8 +2,24 @@
 
 
 #page-download {
-	background-color: $gray-1;
+	background: $gray-1;
 
+	//
+	//	Background – Logo Watermark
+	//
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		bottom: 0;
+
+		width: 933px;
+		height: 977px;
+		background: url('../img/bg-logo-watermark.svg') 0 0 no-repeat;
+		background-size: cover;
+		pointer-events: none;
+	}
 
 	.section--steps {
 		padding: $bu*4 0 $bu*4;

@@ -40,7 +40,7 @@
 		content: "";
 		position: absolute;
 		z-index: 0;
-		left: -365px;
+		left: 0;
 		bottom: -280px;
 
 		width: 933px;
@@ -54,6 +54,6 @@
 		@media (min-width: $breakpoint-lg) { bottom: -70px; }
 		@media (min-width: $breakpoint-xl) { bottom: -230px; }
 		@media (min-width: $breakpoint-xl2) { bottom: -255px; }
-		@media (min-width: $breakpoint-xxl) { bottom: -280px; }
+		@media (min-width: $breakpoint-xxl) { bottom: -250px; }
 	}
 }
