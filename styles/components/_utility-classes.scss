@@ -47,6 +47,7 @@
 		height: 977px;
 		background: url('../img/bg-logo-watermark.svg') 0 0 no-repeat;
 		background-size: cover;
+		pointer-events: none;
 
 		@media (min-width: $breakpoint-sm) { bottom: -100px; }
 		@media (min-width: $breakpoint-md) { bottom: -390px; }
