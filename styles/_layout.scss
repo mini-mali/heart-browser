@@ -8,6 +8,10 @@
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
 	font-size: $bu;
 	line-height: $bu*1.5;
 	font-family: "Poppins", sans-serif;
@@ -21,6 +25,7 @@ img {
 }
 
 main {
+	flex: 1;
 	text-align: center;
 }
 
@@ -71,6 +76,7 @@ main {
 .header {
 	height: 72px;
 	padding: $bu $bu*1.25;
+	width: 100%;
 	max-width: 1360px;
 
 	display: flex;
