@@ -7,7 +7,7 @@
 	const triggerElement = document.querySelector('.js-show-sticky-bar');
 
 	// Function to check when the sticky bar should appear
-	function stickyBar() {
+	function checkStickyBar() {
 		const triggerPosition = triggerElement.getBoundingClientRect().top;
 		
 		if (triggerPosition <= 0) {
@@ -22,5 +22,7 @@
 	}
 
 	// Listen for the scroll event
-	window.addEventListener('scroll', stickyBar);
+	if (stickyBar && triggerElement) {
+		window.addEventListener('scroll', checkStickyBar);
+	}
 })();
