@@ -1,0 +1,15 @@
+@use "./styles/_variables" as *;  // Imports without namespace
+
+.bft-banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: $bu;
+	padding: $bu $bu*1.5;
+	background: $turquoise;
+
+	// 992px +
+	@media (min-width: $breakpoint-lg) {
+		//...
+	}
+}
