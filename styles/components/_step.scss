@@ -1,0 +1,87 @@
+@use "./styles/_variables" as *;  // Imports without namespace
+
+//
+//	Step – Container
+//
+.steps-container {
+	display: flex;
+	flex-direction: column;
+	padding: $bu*1.5 $bu*2;
+	background: $white;
+	border-radius: $bu*2;
+	box-shadow: $shadow;
+
+	// 992px +
+	@media (min-width: $breakpoint-lg) {
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		gap: $bu*2;
+		padding: 0 $bu $bu*3.5 $bu;
+		border-radius: $bu*2.5;
+	}
+}
+
+
+//
+//	Step – Item
+//
+.step {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-grow: 1;
+	flex-basis: 0;
+	gap: $bu;
+
+	&:not(:last-child) {
+		margin-bottom: $bu*2.5;
+		padding-bottom: $bu*2.5;
+		border-bottom: 1px solid $gray-2;
+	}
+
+	// 992px +
+	@media (min-width: $breakpoint-lg) {
+		position: relative;
+		padding: $bu*3 $bu*1.5 0 $bu*1.5;
+
+		&:not(:last-child) {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border-bottom: none;
+
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: $bu*3.5;
+				bottom: 0;
+				right: -$bu;
+				display: block;
+				width: 1px;
+				background: $gray-2;
+			}
+		}
+	}
+
+
+	.label {
+		@media (min-width: $breakpoint-lg) {
+			position: absolute;
+			top: -$bu*1.1875;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	.step-text {
+		@media (min-width: $breakpoint-lg) { min-height: $bu*9.25; }
+		@media (min-width: $breakpoint-xl) { min-height: $bu*7.5; }
+		@media (min-width: $breakpoint-xl2) { min-height: $bu*6; }
+	}
+
+	img {
+		width: 100%;
+	}
+}
