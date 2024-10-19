@@ -1,2 +1,39 @@
 @use "./styles/_variables" as *;  // Imports without namespace
 
+
+#page-index {
+	//
+	//	Section: Features 1 (100% of our profits are donated to charities.)
+	//
+	.section--features-1 {
+		.features-container {
+			// 992px +
+			@media (min-width: $breakpoint-lg) {
+				margin: 0 $bu*5;
+			}
+
+			// 1280px +
+			@media (min-width: $breakpoint-xl) {
+				margin: 0;
+			}
+		}
+	}
+
+
+	//
+	//	Section: Features 2 (We Never Ask You for Money)
+	//
+	//.section--features-2 {}
+
+
+	//
+	//	Section: Testimonials
+	//
+	//.section--testimonials {}
+
+
+	//
+	//	Section: Download – Before the Footer
+	//
+	//.section--download-bottom {}
+}

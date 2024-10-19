@@ -1,3 +1,6 @@
 @use "./styles/_variables" as *;  // Imports without namespace
 
 
+#page-download {
+	background-color: $gray-3;
+}

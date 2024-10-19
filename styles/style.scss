@@ -1,12 +1,25 @@
+//
+//	Base
+//
 @use "./styles/_variables" as *;  // Imports without namespace
 @use "./styles/_typography" as *;
 @use "./styles/_layout" as *;
+
+
+//
+// Components
+//
 @use "./styles/components/_utility-classes" as *;
 @use "./styles/components/_buttons" as *;
 @use "./styles/components/_features" as *;
 @use "./styles/components/_testimonial" as *;
 
 
+//
+// Pages
+//
+@use "./styles/pages/_index" as *;
+@use "./styles/pages/_download" as *;
 
 
 //
@@ -155,40 +168,7 @@
 }
 
 
-//
-//	Section: Features 1 (100% of our profits are donated to charities.)
-//
-.section--features-1 {
-	.features-container {
-		// 992px +
-		@media (min-width: $breakpoint-lg) {
-			margin: 0 $bu*5;
-		}
 
-		// 1280px +
-		@media (min-width: $breakpoint-xl) {
-			margin: 0;
-		}
-	}
-}
-
-
-//
-//	Section: Features 2 (We Never Ask You for Money)
-//
-//.section--features-2 {}
-
-
-//
-//	Section: Testimonials
-//
-//.section--testimonials {}
-
-
-//
-//	Section: Download – Before the Footer
-//
-//.section--download-bottom {}
 
 
 
